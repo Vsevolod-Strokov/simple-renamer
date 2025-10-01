@@ -1,11 +1,17 @@
 import os
 path = input ('Введи путь: ')
 os.chdir(path)
-for i in os.listdir():
-    num = i[-6:-4]
-    ext = i[-3:]
-    new_name = num + '.' + ext
-    print (f'Старое имя: {i}\nНовое имя: {new_name}')
+lst = os.listdir()
+dic = {}
 
-    os.rename(i, new_name)
+for i in lst:
+    num = int(i[-6:-4])
+    dic[num] = i
+
+pairs = dict(sorted(dic.items()))
+
+for key,value in pairs.items():
+    new_name = str(key) + value[-4:]
+    os.rename(value, new_name)
+    
 print ('ОК!')
