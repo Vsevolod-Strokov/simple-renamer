@@ -1,4 +1,5 @@
 import os
+from time import sleep
 
 path = input('Введи путь: ')
 os.chdir(path)
@@ -32,4 +33,6 @@ if  input('\nПродолжить?(Y/n): ').lower() == 'y':
         new_name = str(key) + value[-4:]
         os.rename(value, new_name)
     print('Файлы успешно переименованы!')
+    sleep(3)
 else: print("Программа завершила работу без внесения изменений")
+sleep(3)
