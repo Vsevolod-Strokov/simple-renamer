@@ -1,7 +1,11 @@
-Простая программа на Python, которая переименовавает пронумерованные файлы, отбрасывая ненужную часть в названии.
+Простые программы на Python, которые переименовывает файлы, по последнему изменению и отбрасывании ненужной части в названии.
 
+Например работа **renamer.py**:
+image_image_1.png -> 1.png
+image_image_2.png -> 2.png
+
+**rename by last edit.py** в свою очередь переименовывает последние изменённые файлы.
 Например:
-image_image_image_image_image_1.png -> 1.png
-image_image_image_image_image_2.png -> 2.png
-image_image_image_image_image_3.png -> 3.png
-image_image_image_image_image_4.png -> 4.png
+
+Предпоследний изменённый файл.txt > 1.txt
+Последний изменённый файл.txt > 2.txt
